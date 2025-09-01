@@ -211,6 +211,7 @@ $features = [
                     </p>
                 </div>
             </div>
+
             <div class="flex  flex-row justify-between items-center">
                 <!-- real-time collaboration -->
                 <div class="flex   w-1/2 ">
@@ -280,103 +281,106 @@ $features = [
             </div>
 
             <!-- easy task management -->
-            <div class="grid items-center gap-12 lg:grid-cols-2">
-                <div class="animate-slideLeft">
-                    <div class='mb-2 text-sm font-semibold text-purple-600'>
-                        TASK ORGANIZATION
-                    </div>
-                    <h3 class='mb-4 text-2xl font-bold text-gray-900 sm:text-3xl'>
-                        Easy Task Management
-                    </h3>
-                    <p class='mb-6 text-gray-600'>
-                        Create, assign, and track tasks with intuitive drag-and-drop
-                        functionality. Set priorities, deadlines, and dependencies to
-                        keep your projects moving forward smoothly.
-                    </p>
-                    <div class="hover:scale-105 active:scale-95">
-                        <button class="h-10 px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground text-purple-600 bg-transparent border-purple-600 hover:bg-purple-600 hover:text-white">
-                            Learn more
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <div class="flex  flex-row justify-between items-center mt-20">
 
-            <div class="relative animate-slideRight">
-                <div class="p-6 bg-white rounded-lg shadow-lg">
-                    <div class="flex items-center justify-between mb-6">
-                        <h4 class='font-semibold'>Task Board</h4>
-                        <button class="bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3 text-xs bg-purple-600 hover:bg-purple-70">
-                            + Add Task
-                        </button>
-                    </div>
-                    <div className='grid grid-cols-3 gap-4'>
-                        <div className='space-y-3'>
-                            <div className='text-xs font-semibold tracking-wide text-gray-500 uppercase'>
-                                To Do
-                            </div>
-                            <div className='p-3 border-l-4 border-red-400 rounded-lg bg-gray-50'>
-                                <div className='mb-1 text-sm font-medium'>
-                                    Design Review
-                                </div>
-                                <div className='mb-2 text-xs text-gray-500'>
-                                    Due: Today
-                                </div>
-                                <div className='flex items-center space-x-1'>
-                                    <div className='w-4 h-4 bg-red-400 rounded-full'></div>
-                                    <span className='text-xs text-gray-600'>High</span>
-                                </div>
-                            </div>
-                            <div className='p-3 border-l-4 border-yellow-400 rounded-lg bg-gray-50'>
-                                <div className='mb-1 text-sm font-medium'>
-                                    User Testing
-                                </div>
-                                <div className='mb-2 text-xs text-gray-500'>
-                                    Due: Tomorrow
-                                </div>
-                                <div className='flex items-center space-x-1'>
-                                    <div className='w-4 h-4 bg-yellow-400 rounded-full'></div>
-                                    <span className='text-xs text-gray-600'>Medium</span>
-                                </div>
-                            </div>
+                <div class="flex w-1/2 ">
+                    <div class="animate-slideLeft">
+                        <div class='mb-2 text-sm font-semibold text-purple-600'>
+                            TASK ORGANIZATION
                         </div>
-                        <div className='space-y-3'>
-                            <div className='text-xs font-semibold tracking-wide text-gray-500 uppercase'>
-                                In Progress
-                            </div>
-                            <div className='p-3 border-l-4 border-blue-400 rounded-lg bg-blue-50'>
-                                <div className='mb-1 text-sm font-medium'>
-                                    API Integration
-                                </div>
-                                <div className='mb-2 text-xs text-gray-500'>
-                                    Due: Friday
-                                </div>
-                                <div className='flex items-center space-x-1'>
-                                    <div className='w-4 h-4 bg-blue-400 rounded-full'></div>
-                                    <span className='text-xs text-gray-600'>High</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='space-y-3'>
-                            <div className='text-xs font-semibold tracking-wide text-gray-500 uppercase'>
-                                Done
-                            </div>
-                            <div className='p-3 border-l-4 border-green-400 rounded-lg bg-green-50'>
-                                <div className='mb-1 text-sm font-medium'>
-                                    Database Setup
-                                </div>
-                                <div className='mb-2 text-xs text-gray-500'>
-                                    Completed
-                                </div>
-                                <div className='flex items-center space-x-1'>
-                                    <div className='w-4 h-4 bg-green-400 rounded-full'></div>
-                                    <span className='text-xs text-gray-600'>Medium</span>
-                                </div>
-                            </div>
+                        <h3 class='mb-4 text-2xl font-bold text-gray-900 sm:text-3xl'>
+                            Easy Task Management
+                        </h3>
+                        <p class='mb-6 text-gray-600'>
+                            Create, assign, and track tasks with intuitive drag-and-drop
+                            functionality. Set priorities, deadlines, and dependencies to
+                            keep your projects moving forward smoothly.
+                        </p>
+                        <div class="hover:scale-105 active:scale-95">
+                            <button class="h-10 px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground text-purple-600 bg-transparent border-purple-600 hover:bg-purple-600 hover:text-white">
+                                Learn more
+                            </button>
                         </div>
                     </div>
                 </div>
 
+                <div class="relative animate-slideRight w-[710px]">
+                    <div class="p-6 bg-white rounded-lg shadow-lg">
+                        <div class="flex items-center justify-between mb-6">
+                            <h4 class='font-semibold'>Task Board</h4>
+                            <button class="bg-primary text-primary-foreground text-white hover:bg-primary/90 h-9 rounded-md px-3 text-xs bg-purple-600 hover:bg-purple-70">
+                                + Add Task
+                            </button>
+                        </div>
+                        <div class='flex flex-row gap-4'>
+                            <div class='space-y-3 flex flex-col w-1/3'>
+                                <div class='text-xs font-semibold tracking-wide text-gray-500 uppercase'>
+                                    To Do
+                                </div>
+                                <div class='p-3 border-l-4 border-red-400 rounded-lg bg-gray-50'>
+                                    <div class='mb-1 text-sm font-medium'>
+                                        Design Review
+                                    </div>
+                                    <div class='mb-2 text-xs text-gray-500'>
+                                        Due: Today
+                                    </div>
+                                    <div class='flex items-center space-x-1'>
+                                        <div class='w-4 h-4 bg-red-400 rounded-full'></div>
+                                        <span class='text-xs text-gray-600'>High</span>
+                                    </div>
+                                </div>
+                                <div class='p-3 border-l-4 border-yellow-400 rounded-lg bg-gray-50'>
+                                    <div class='mb-1 text-sm font-medium'>
+                                        User Testing
+                                    </div>
+                                    <div class='mb-2 text-xs text-gray-500'>
+                                        Due: Tomorrow
+                                    </div>
+                                    <div class='flex items-center space-x-1'>
+                                        <div class='w-4 h-4 bg-yellow-400 rounded-full'></div>
+                                        <span class='text-xs text-gray-600'>Medium</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='space-y-3 flex flex-col w-1/3'>
+                                <div class='text-xs font-semibold tracking-wide text-gray-500 uppercase'>
+                                    In Progress
+                                </div>
+                                <div class='p-3 border-l-4 border-blue-400 rounded-lg bg-blue-50'>
+                                    <div class='mb-1 text-sm font-medium'>
+                                        API Integration
+                                    </div>
+                                    <div class='mb-2 text-xs text-gray-500'>
+                                        Due: Friday
+                                    </div>
+                                    <div class='flex items-center space-x-1'>
+                                        <div class='w-4 h-4 bg-blue-400 rounded-full'></div>
+                                        <span class='text-xs text-gray-600'>High</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='space-y-3 flex flex-col w-1/3'>
+                                <div class='text-xs font-semibold tracking-wide text-gray-500 uppercase'>
+                                    Done
+                                </div>
+                                <div class='p-3 border-l-4 border-green-400 rounded-lg bg-green-50'>
+                                    <div class='mb-1 text-sm font-medium'>
+                                        Database Setup
+                                    </div>
+                                    <div class='mb-2 text-xs text-gray-500'>
+                                        Completed
+                                    </div>
+                                    <div class='flex items-center space-x-1'>
+                                        <div class='w-4 h-4 bg-green-400 rounded-full'></div>
+                                        <span class='text-xs text-gray-600'>Medium</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
 
 
         </div>
