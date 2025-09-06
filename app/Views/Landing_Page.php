@@ -24,24 +24,93 @@ $menuItems = ['Products', 'Solutions', 'Resources', 'Pricing'];
 <?php
 $menuItems = ['Products', 'Solutions', 'Resources', 'Pricing'];
 ?>
+
+
 <?php
 $features = [
     [
         'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" lucide lucide-zap w-8 h-8 text-purple-600"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>',
         'title' => 'Power Performance',
-        'description' => "Boost your team's productivity with intelligent workflows that adapt to your needs.",
-
+        'description' => "Boost your team's productivity with intelligent workflows that adapt to your needs."
     ],
     [
         'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users w-8 h-8 text-purple-600"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
         'title' => 'Innovative Design',
-        'description' => 'An intuitive interface that makes complex project management feel effortless.',
+        'description' => "An intuitive interface that makes complex project management feel effortless.",
     ],
     [
         'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield w-8 h-8 text-purple-600"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>',
         'title' => 'Robust Security',
         'description' => "Enterprise-grade security measures to keep your team's data safe and secure.",
 
+    ],
+];
+
+?>
+
+<?php
+$starsvg =
+    ' <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4 text-yellow-400 fill-yellow-400"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>';
+
+?>
+
+<?php
+$testimonials = [
+    [
+        'name' => 'Sarah Chen',
+        'role' => 'Product Manager,',
+        'company' => 'TechFlow',
+        'content' =>
+        '"TeamSync has been a game-changer for our team. The intuitive interface and powerful features have streamlined our workflow significantly."',
+        'rating' => str_repeat($starsvg, 5),
+    ],
+    [
+        'name' => 'Mike Rodriguez',
+        'role' => 'Engineering Lead,',
+        'company' => 'InnovateCorp',
+        'content' =>
+        '"We\'ve integrated TeamSync into our daily operations and seen a 40% improvement in project delivery times. Highly recommended!"',
+        'rating' => str_repeat($starsvg, 5),
+    ],
+    [
+        'name' => 'Emily Watson',
+        'role' => 'Creative Director,',
+        'company' => 'DesignStudio',
+        'content' =>
+        '"The collaboration features in TeamSync have transformed how our creative team works together. It\'s simply outstanding."',
+        'rating' => str_repeat($starsvg, 5),
+    ],
+];
+?>
+
+
+<?php
+$faqs = [
+    [
+        'question' => 'How does the platform scale with growing teams?',
+        'answer' =>
+        'TeamSync is designed to grow with your team, from small startups to enterprise organizations with thousands of users.',
+    ],
+    [
+        'question' => 'What advanced security measures do you have in place?',
+        'answer' =>
+        'We implement enterprise-grade security including end-to-end encryption, SSO integration, and compliance with SOC 2 and GDPR standards.',
+    ],
+    [
+        'question' =>
+        'What analytics and reporting capabilities does the platform offer?',
+        'answer' =>
+        'Our platform provides comprehensive analytics including project progress tracking, team performance metrics, and customizable reporting dashboards.',
+    ],
+    [
+        'question' => 'How do integrations work with third-party service providers?',
+        'answer' =>
+        'TeamSync integrates seamlessly with over 100+ popular tools including Slack, GitHub, Figma, and more through our robust API.',
+    ],
+    [
+        'question' => 'Can I customize workflows to match our unique processes?',
+        'answer' =>
+        "TeamSync offers flexible workflow customization to match your team's specific processes and requirements.",
     ],
 ];
 
@@ -177,8 +246,8 @@ $features = [
 
                 <div class="grid gap-8 md:grid-cols-3 ">
                     <?php foreach ($features as $key => $value): ?>
-                        <div class="animate-fadeUp hidden-before ">
-                            <div class="h-full p-8 text-center transition-all duration-300 border-0 shadow-lg hover:shadow-xl rounded-lg ">
+                        <div class="animate-fadeUp hidden-before  ">
+                            <div class="h-full p-8 text-center transition-all duration-700 border-0 shadow-lg hover:shadow-xl rounded-lg hover:-translate-y-2 ease-in-out">
                                 <div class="p-0 pt-0">
                                     <div class="flex justify-center mb-6 transform hover:rotate-[360deg] transition duration-500">
                                         <?= $value['icon'] ?>
@@ -227,7 +296,7 @@ $features = [
                             on the same page with instat updates and shared workspaces.
                         </p>
                         <div class="hover:scale-105 active:scale-95">
-                            <button class="h-10 px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground text-purple-600 bg-transparent border-purple-600 hover:bg-purple-600 hover:text-white">
+                            <button class="h-10 px-4 py-2 border rounded-md border-input bg-background hover:bg-accent hover:text-accent-foreground text-purple-600 bg-transparent border-purple-600 hover:bg-purple-600 hover:text-white">
                                 Learn more
                             </button>
                         </div>
@@ -297,7 +366,7 @@ $features = [
                             keep your projects moving forward smoothly.
                         </p>
                         <div class="hover:scale-105 active:scale-95">
-                            <button class="h-10 px-4 py-2 border border-input bg-background hover:bg-accent hover:text-accent-foreground text-purple-600 bg-transparent border-purple-600 hover:bg-purple-600 hover:text-white">
+                            <button class="h-10 px-4 py-2 border rounded-md border-input bg-background hover:bg-accent hover:text-accent-foreground text-purple-600 bg-transparent border-purple-600 hover:bg-purple-600 hover:text-white">
                                 Learn more
                             </button>
                         </div>
@@ -380,14 +449,127 @@ $features = [
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
 
+        <!-- testimonials -->
+        <div class="px-4 py-20 sm:px-6 lg:px-8 animate-fadeUp hidden-before ">
+            <div class="container mx-auto ">
+                <div class="mb-16 text-center">
+                    <h2 class='mb-4 text-3xl font-bold text-gray-900 sm:text-4xl'>
+                        Trusted by Teams
+                    </h2>
+                    <p class='max-w-2xl mx-auto text-xl text-gray-600'>
+                        See what our customers have to say about their experience with
+                        TeamSync and discover what makes us special.
+                    </p>
+                </div>
+
+                <div class="flex gap-8 md:flex-row ">
+                    <?php foreach ($testimonials as $key => $testimonial): ?>
+                        <div class="animate-fadeUp hidden-before delay-[0.2s] w-1/3  ">
+                            <div class="rounded-lg bg-card text-card-foreground h-full p-6 transition-all duration-700 border-0 shadow-lg hover:shadow-xl hover:-translate-y-2 ease-in-out ">
+                                <div class="flex items-start  pt-0 p-0 flex-col ">
+                                    <div class="flex mb-4">
+                                        <?= $testimonial['rating'] ?>
+
+                                    </div>
+                                    <p class="mb-6 text-gray-600">
+                                        <?= esc($testimonial['content']) ?>
+                                    </p>
+                                    <div class="flex items-center">
+
+                                    </div>
+                                    <div class="font-semibold text-gray-900">
+                                        <?= $testimonial['name'] ?>
+                                    </div>
+                                    <div class="text-sm text-gray-500">
+                                        <?= $testimonial['role'] ?>
+                                        <?= $testimonial['company'] ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
 
 
+        <!-- FAQ section -->
+        <div class="px-4 py-20 sm:px-6 lg:px-8 bg-gray-50 animate-fadeUp hidden-before">
+            <div class="container max-w-3xl mx-auto">
+                <div class='mb-16 text-center'>
+                    <h2 class='mb-4 text-3xl font-bold text-gray-900 sm:text-4xl'>
+                        Need Help?
+                    </h2>
+                    <p class='text-xl text-gray-600'>
+                        Find answers to the most common questions to help you navigate our
+                        platform.
+                    </p>
+                </div>
+
+                <div class="space-y-2 ">
+                    <!-- Hidden radio to allow all closed initially -->
+                    <input type="radio" name="accordion" id="none" class="hidden" checked>
+
+                    <?php foreach ($faqs as $i => $faq): ?>
+                        <div class="border rounded-lg overflow-hidden bg-white">
+                            <!-- Radio for this item -->
+                            <input type="radio" name="accordion" id="faq<?= $i ?>" class="hidden peer">
+
+                            <!-- Header: closed state -->
+                            <label for="faq<?= $i ?>" class="flex justify-between p-4 cursor-pointer bg-gray-50 hover:bg-gray-100 peer-checked:hidden">
+                                <span class="font-medium"><?= esc($faq['question']) ?></span>
+                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </label>
+
+                            <!-- Header: open state -->
+                            <label for="none" class="hidden peer-checked:flex justify-between p-4 cursor-pointer bg-gray-50 hover:bg-gray-100">
+                                <span class="font-medium"><?= esc($faq['question']) ?></span>
+                                <svg class="w-5 h-5 text-gray-600 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </label>
+
+                            <!-- Content -->
+                            <div class=" max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-[1000px] text-gray-700">
+                                <div class="px-4 pb-4">
+                                    <?= nl2br(esc($faq['answer'])) ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+
+        <!-- final CTA -->
+        <div class="px-4 py-20 sm:px-6 lg:px-8 animate-fadeUp hidden-before">
+            <div class="container mx-auto">
+                <div class="p-12 text-center text-white bg-gradient-to-r from-purple-900 to-blue-900 rounded-2xl transition-transform duration-300 hover:scale-[1.02]">
+                    <h2 class='mb-4 text-3xl font-bold sm:text-4xl'>
+                        Elevate Your Work Today
+                    </h2>
+                    <p class='max-w-2xl mx-auto mb-8 text-xl opacity-90'>
+                        Join thousands of teams already using TeamSync to streamline their
+                        workflow and achieve their goals faster.
+                    </p>
+                    <div class="hover:scale-105 active:scale-95 transition-all  inline-block">
+                        <button class="flex justify-center items-center bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 py-3 text-lg text-purple-900 bg-white hover:bg-gray-100">
+                            Get started
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4 ml-4">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
 

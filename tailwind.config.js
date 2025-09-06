@@ -36,6 +36,10 @@ export default {
           '0%': { opacity: '0', transform: 'translateX(50px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
+        faqslidedown: {
+          '0%': { opacity: '0', transform: 'translateY(-10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       },
       animation: {
         slideDown: 'slideDown 0.6s ease-out forwards',
@@ -45,6 +49,7 @@ export default {
         fadeUp: 'fadeUp 0.6s ease-out forwards',
         slideLeft: 'slideLeft 0.6s ease-out forwards',
         slideRight: 'slideRight 0.6s ease-out forwards',
+        faqslidedown: 'faqslidedown 0.3s ease-out forwards',
       },
     },
   },
